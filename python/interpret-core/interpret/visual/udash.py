@@ -873,7 +873,7 @@ def _expand_ctx_item(item):
 
     if selector is not None:
         df = selector.copy()
-        df.reset_index(inplace=True, drop=True)
+        # df.reset_index(inplace=True, drop=True)
         df["id"] = df.index
         df *= 1
     else:
